@@ -147,6 +147,14 @@ class Field extends AbstractFormObject
         return null;
     }
 
+    /***
+     * @return string|null The name of the field
+     */
+    public function getNameWithoutNamespace(): ?string
+    {
+        return $this->name;
+    }
+
     /**
      * @return bool True if the current value of the field is not null
      */
